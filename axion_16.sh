@@ -16,4 +16,10 @@ export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 
 axion santoni user vanilla
 
+m systemimage > system_build.txt
+
+m vendorimage > vendor_build.txt
+
+m bootimage > boot_build.txt
+
 ax -b user
