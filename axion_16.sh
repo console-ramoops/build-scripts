@@ -1,0 +1,19 @@
+# Crave
+
+. b*/*sh
+
+export BUILD_USERNAME=alpha269 
+
+export BUILD_HOSTNAME=android
+
+export KBUILD_BUILD_USER=alpha269
+
+export KBUILD_BUILD_HOST=android
+
+export TZ=Asia/Kolkata
+
+export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
+
+axion santoni user vanilla
+
+ax -b user
