@@ -16,10 +16,7 @@ export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 
 axion santoni user vanilla
 
-ax -b user
-
-m systemimage > system_build.txt
-
-m vendorimage > vendor_build.txt
-
-m bootimage > boot_build.txt
+ax -b user 2>&1 | tee bacon_build.log || \
+  (m systemimage 2>&1 | tee system_build.log && \
+   m vendorimage 2>&1 | tee vendor_build.log && \
+   m bootimage 2>&1 | tee boot_build.log)
