@@ -20,4 +20,4 @@ m systemimage
 
 m vendorimage 
 
-m bootimage
+# bootimage
